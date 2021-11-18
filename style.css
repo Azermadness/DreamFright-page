@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    background-color: white;
+    margin: 0%;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.desc_image {
+    background-size: 100% auto;
+    width: 35px;
+    height: 875px;
+    background-image: url("DF_desc1_ver.png");
+    background-color: white;
+}
+
+.main_image {
+    background-size: 100% auto;
+    width: 110px;
+    height: 1100px;
+    background-image: url("DF_main_ver.png");
+    background-color: white;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+}
+
+.slide1 {
+    animation: anirev1 25s linear infinite;
+}
+
+.slide2 {
+    animation: anirev1 35s linear infinite;
+}
+
+.slide3 {
+    animation: ani1 45s linear infinite;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.diapo {
+    position: absolute;
+    right: 90px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    animation-timing-function: linear;
+}
+
+.diap1 {
+    animation: diap1 30s infinite;
+    background-image: url("planet2.png");
+}
+
+.diap2 {
+    animation: diap2 30s infinite;
+    background-image: url("sm64_Render.png");
+}
+
+.diap3 {
+    animation: diap3 30s infinite;
+    background-image: url("lost_forest.png");
+}
+
+.diap4 {
+    animation: diap4 30s infinite;
+    background-image: url("chibi.png");
+}
+
+.diap5 {
+    animation: diap5 30s infinite;
+    background-image: url("bananas.png");
+}
+
+.diap6 {
+    animation: diap6 30s infinite;
+    background-image: url("logo_team.png");
+}
+
+.transition {
+    animation: transition 5s ease-in-out infinite;
+    position: absolute;
+    right: 180px;
+    width: 100%;
+    height: 100%;
+}
+
+.transition2 {
+    animation: transition2 5s ease-in-out infinite;
+    position: absolute;
+    right: 180px;
+    width: 100%;
+    height: 100%;
+}
+
+.transition3 {
+    animation: transition3 5s ease-in-out infinite;
+    position: absolute;
+    right: 180px;
+    width: 100%;
+    height: 100%;
+}
+
+.drive {
+    width: 50px;
+    position: absolute;
+    right: 190px;
+    bottom: 10px;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.proj {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    right: 250px;
+    bottom: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .desc_image {
+        background-size: auto 100%;
+        height: 20px;
+        width: 500px;
+        background-image: url("DF_desc1_hor.png");
+        background-color: springgreen;
+    }
+    .main_image {
+        background-size: auto 100%;
+        height: 60px;
+        width: 600px;
+        background-image: url("DF_main_hor.png");
+        background-color: springgreen;
+    }
+    .slide {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        overflow: visible;
+    }
+    .slide1 {
+        animation: ani2 25s linear infinite;
+    }
+    .slide2 {
+        animation: ani2 35s linear infinite;
+    }
+    .slide3 {
+        animation: anirev2 45s linear infinite;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+    }
+    .align {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    .diapo {
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        animation-timing-function: linear;
+    }
+    .transition {
+        animation: htransition 5s ease-in-out infinite;
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .transition2 {
+        animation: htransition2 5s ease-in-out infinite;
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .transition3 {
+        animation: htransition3 5s ease-in-out infinite;
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .drive {
+        width: 35px;
+        position: absolute;
+        right: 10px;
+        bottom: 110px;
+        color: white;
+        mix-blend-mode: difference;
+    }
+    .proj {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: white;
+        mix-blend-mode: difference;
+        position: absolute;
+        right: 52px;
+        bottom: 111px;
+    }
+}
+
+@keyframes diap1 {
+    0% {
+        opacity: 0;
+    }
+    0.1% {
+        opacity: 1;
+    }
+    16.6% {
+        opacity: 1;
+    }
+    16.7% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes diap2 {
+    0% {
+        opacity: 0;
+    }
+    16.6% {
+        opacity: 0;
+    }
+    16.7% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    33.4% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes diap3 {
+    0% {
+        opacity: 0;
+    }
+    33.3% {
+        opacity: 0;
+    }
+    33.4% {
+        opacity: 1;
+    }
+    49.9% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes diap4 {
+    0% {
+        opacity: 0;
+    }
+    49.9% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    66.6% {
+        opacity: 1;
+    }
+    66.7% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes diap5 {
+    0% {
+        opacity: 0;
+    }
+    66.6% {
+        opacity: 0;
+    }
+    66.7% {
+        opacity: 1;
+    }
+    83.3% {
+        opacity: 1;
+    }
+    83.4% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes diap6 {
+    0% {
+        opacity: 0;
+    }
+    83.3% {
+        opacity: 0;
+    }
+    83.4% {
+        opacity: 1;
+    }
+    99.9% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes anirev1 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(0%, -100%);
+    }
+}
+
+@keyframes anirev2 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(100%, 0%);
+    }
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        transform: translate(100%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes transition {
+    0% {
+        transform: translateY(0%);
+        background-color: rgb(200, 68, 226);
+    }
+    15% {
+        transform: translateY(-100%);
+        background-color: rgb(200, 68, 226);
+    }
+    85% {
+        transform: translateY(-100%);
+        background-color: rgb(200, 68, 226);
+    }
+    100% {
+        transform: translateY(0%);
+        background-color: rgb(200, 68, 226);
+    }
+}
+
+@keyframes htransition {
+    0% {
+        transform: translateX(0%);
+        background-color: rgb(200, 68, 226);
+    }
+    15% {
+        transform: translateX(-100%);
+        background-color: rgb(200, 68, 226);
+    }
+    85% {
+        transform: translateX(-100%);
+        background-color: rgb(200, 68, 226);
+    }
+    100% {
+        transform: translateX(0%);
+        background-color: rgb(200, 68, 226);
+    }
+}
+
+@keyframes transition2 {
+    0% {
+        transform: translateY(0%);
+        background-color: blueviolet;
+    }
+    12.5% {
+        transform: translateY(-100%);
+        background-color: blueviolet;
+    }
+    87.5% {
+        transform: translateY(-100%);
+        background-color: blueviolet;
+    }
+    100% {
+        transform: translateY(0%);
+        background-color: blueviolet;
+    }
+}
+
+@keyframes htransition2 {
+    0% {
+        transform: translateX(0%);
+        background-color: blueviolet;
+    }
+    12.5% {
+        transform: translateX(-100%);
+        background-color: blueviolet;
+    }
+    87.5% {
+        transform: translateX(-100%);
+        background-color: blueviolet;
+    }
+    100% {
+        transform: translateX(0%);
+        background-color: blueviolet;
+    }
+}
+
+@keyframes transition3 {
+    0% {
+        transform: translateY(0%);
+        background-color: rgb(68, 49, 190);
+    }
+    10% {
+        transform: translateY(-100%);
+        background-color: rgb(68, 49, 190);
+    }
+    90% {
+        transform: translateY(-100%);
+        background-color: rgb(68, 49, 190);
+    }
+    100% {
+        transform: translateY(0%);
+        background-color: rgb(68, 49, 190);
+    }
+}
+
+@keyframes htransition3 {
+    0% {
+        transform: translateX(0%);
+        background-color: rgb(68, 49, 190);
+    }
+    10% {
+        transform: translateX(-100%);
+        background-color: rgb(68, 49, 190);
+    }
+    90% {
+        transform: translateX(-100%);
+        background-color: rgb(68, 49, 190);
+    }
+    100% {
+        transform: translateX(0%);
+        background-color: rgb(68, 49, 190);
+    }
+}
